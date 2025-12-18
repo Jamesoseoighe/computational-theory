@@ -1,15 +1,24 @@
 # Computational Theory: SHA-256 Implementation and Security Analysis
 
+**Author:** James Oseoighe  
+**Module:** Computational Theory  
+**Academic Year:** Winter 2025/26
+
 This project explores computational complexity and security through the implementation and analysis of the SHA-256 cryptographic hash function. It demonstrates both the mathematical foundations of secure hashing and common vulnerabilities in password security.
 
 ## Overview
 
-This repository contains a Jupyter notebook that implements the SHA-256 hashing algorithm from scratch, following the FIPS 180-4 standard. The project serves as an educational resource for understanding:
+This repository contains a single Jupyter notebook (`problems.ipynb`) that implements the SHA-256 hashing algorithm from scratch, following the FIPS 180-4 standard. The implementation is fully self-contained and reproducible, requiring only standard Python libraries and numpy.
+
+**Target Audience:** This project is designed for informed computing professionals, such as prospective employers or technical reviewers, who have a strong background in computing but may not be familiar with cryptographic implementations.
+
+The project demonstrates understanding of:
 
 - Cryptographic hash functions and their components
-- The SHA-256 algorithm specification
+- The SHA-256 algorithm specification (FIPS 180-4)
 - Computational complexity in security contexts
 - Common password security vulnerabilities
+- Clean code practices following PEP 8 guidelines
 
 ## What's Inside
 
@@ -79,6 +88,8 @@ Demonstrates the vulnerability of unsalted password hashes through a practical d
 
 ## Usage
 
+The notebook is designed to be run sequentially from top to bottom. Each problem is clearly marked with a level 2 heading.
+
 1. Launch Jupyter Notebook:
    ```bash
    jupyter notebook
@@ -86,10 +97,15 @@ Demonstrates the vulnerability of unsalted password hashes through a practical d
 
 2. Open `problems.ipynb` in the Jupyter interface
 
-3. Run cells sequentially to see:
-   - Function implementations with example outputs
-   - Test cases demonstrating correctness
-   - Educational explanations and comments
+3. Run cells sequentially (Cell → Run All, or run each cell individually with Shift+Enter)
+
+The notebook will display:
+- Function implementations with detailed comments
+- Example outputs demonstrating correctness
+- Test cases with comprehensive validation
+- Explanations of cryptographic concepts and security implications
+
+**Note:** All code is self-contained within the notebook. No external data files are required.
 
 ## Educational Context
 
@@ -117,14 +133,33 @@ This project was created to understand:
   - [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
   - [RFC 8018: PKCS #5 - PBKDF2](https://tools.ietf.org/html/rfc8018)
 
+## Repository Structure
+
+```
+computational-theory/
+├── README.md           # This file - project documentation
+├── problems.ipynb      # Main notebook with all problem solutions
+├── .gitignore         # Git ignore patterns for Python projects
+└── .vscode/           # VS Code configuration (optional)
+```
+
+## Development Notes
+
+This repository was developed incrementally over the assessment period, as evidenced by the commit history. The code follows Python best practices:
+- **PEP 8** style guidelines for formatting and naming conventions
+- **Meaningful variable names** for clarity
+- **Modular code structure** with clear separation of concerns
+- **Comprehensive comments** explaining implementation details
+- **Test cases** validating correctness against known standards
+
+## Assessment Context
+
+This repository was created as part of the Computational Theory module assessment (Winter 2025/26). It demonstrates:
+- Research into cryptographic standards (FIPS 180-4)
+- Implementation of complex algorithms from specification
+- Understanding of computational security concepts
+- Professional code documentation and presentation practices
+
 ## License
 
-This project is for educational purposes. Please refer to the repository license for usage terms.
-
-## Author
-
-James Oseoighe
-
-## Contributing
-
-This is an educational project. If you find issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+This project is for educational purposes as part of an academic assessment.
